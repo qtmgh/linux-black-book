@@ -1,0 +1,22 @@
+[*] WHOIS info for discord.com: 
+   Domain Name: DISCORD.COM
+   Registry Domain ID: 39993744_DOMAIN_COM-VRSN
+   Registrar WHOIS Server: whois.cloudflare.com
+   Registrar URL: http://www.cloudflare.com
+   Updated Date: 2021-01-14T19:40:32Z
+   Creation Date: 2000-11-06T11:45:38Z
+   Registry Expiry Date: 2025-11-06T11:45:37Z
+   Registrar: Cloudflare, Inc.
+   Registrar IANA ID: 1910
+   Registrar Abuse Contact Email: registrar-abuse@cloudflare.com
+   Registrar Abuse Contact Phone: +1.6503198930
+   Domain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited
+   Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+   Domain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited
+   Domain Status: serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited
+   Domain Status: serverTransferProhibited https://icann.org/epp#serverTransferProhibited
+   Domain Status: serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited
+   Name Server: GABE.NS.CLOUDFLARE.COM
+   Name Server: SIMA.NS.CLOUDFLARE.COM
+   DNSSEC: signedDelegation
+

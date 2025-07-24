@@ -1,0 +1,3 @@
+[*] Resolving IP address for facebook.com...
+157.240.22.35
+
