@@ -50,3 +50,21 @@ Creates a local copy of a remote repo
 ## chmod +x filename 
 Gives execute permission to the file so it can be run as a program
 
+## ps aux | grep $USER
+Lists all running processes for the current user.
+
+## htop
+An interactive process viewer (may need installation).
+
+## kill -9 PID
+Forcefully kills a process by its PID.
+
+## sleep 300 &
+Runs a commands in the background for 300 seconds.
+
+## jobs
+Lists background jobs.
+
+## kill %1
+Kills the background job number 1.
+
