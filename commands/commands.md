@@ -46,3 +46,7 @@ Pulls from github to local repo
 
 ## git clone
 Creates a local copy of a remote repo
+
+## chmod +x filename 
+Gives execute permission to the file so it can be run as a program
+
