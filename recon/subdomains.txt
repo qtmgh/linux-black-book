@@ -1,0 +1,8 @@
+www
+mail
+ftp
+test
+dev
+api
+portal
+blog
