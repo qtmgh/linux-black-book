@@ -1,4 +1,5 @@
 import requests
+import socket
 
 def check_subdomain(domain, subdomain):
     url = f"http://{subdomain}.{domain}"
@@ -6,14 +7,38 @@ def check_subdomain(domain, subdomain):
         response = requests.get(url, timeout=2)
         # If we get a response without exception, subdomain is live
         print(f"[+] Live: {url}")
-        return True
+        return f"{subdomain}.{domain}"
     except requests.RequestException:
         # Subdomain did not respond or does not exist
         print(f"[-] Dead: {url}")
-        return False
+        return None
+
+def port_scan(host):
+    common_ports = [21, 22, 23, 80, 443]
+    open_ports = []
+    for port in common_ports: 
+        # create a socket
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        # set timeout to 3 seconds 
+        s.settimeout(3) 
+        # try to connect to host on this port
+        try:
+            s.connect((host,port)) 
+            open_ports.append(port) # add ports to open list
+        except:
+            pass # if fails, ignore error
+        finally:
+            s.close() # Close socket whether success or error
+
+    return open_ports # Returns the list of open ports found
 
 if __name__ == "__main__":
     domain = input("Enter domain (e.g., example.com): ").strip()
     sub = input("Enter subdomain to check (e.g., www): ").strip()
 
-    check_subdomain(domain, sub)
+    full_domain = check_subdomain(domain, sub)
+    open_ports = port_scan(full_domain)
+    if open_ports:
+        print(f"Open ports on {full_domain}: {open_ports}")
+    else:
+        print("No common ports are open.")
